@@ -1,10 +1,10 @@
-<p align="center">
-    <img src="https://github.com/yezz123/yezz123/blob/master/img/school-of-athens.jpg?raw=true" alt="School of Athena">
-</p>
+![TASK](.vscode/header.svg)
 
 # Task-Boilerplate :rocket:
 
 - This is a Flask application that is set up and configured to work with a database and nginx. Write a docker-compose.yaml that will bring all these services up and allow the app to run on port `80`.
+
+- The server side of the task management system was developed using SQLAlchemy & Flask For Creating and configuring a deployable boilerplate.
 
 ## Setting up Nginx
 
@@ -19,7 +19,7 @@ http {
     server {
         listen 80;
         location / {
-            proxy_pass http://flask-app:5000;
+            proxy_pass http://app:5000;
         }
     }
 }
