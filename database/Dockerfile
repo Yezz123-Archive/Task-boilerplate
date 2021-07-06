@@ -10,7 +10,7 @@ FROM mysql:5.7
 
 ENV MYSQL_ROOT_PASSWORD="${MYSQL_ROOT_PASSWORD}"
 
-ENV MYSQL_DATABASE="flaskdb"
+ENV MYSQL_DATABASE="database"
 
 # Add the content of the .sql file to your image
 
