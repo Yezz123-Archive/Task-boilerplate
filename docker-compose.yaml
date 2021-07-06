@@ -11,9 +11,9 @@ services:
         source: ./nginx/nginx.conf
         target: /etc/nginx/nginx.conf
   flask-app:
-    container_name: flask-app
-    image: trio-flask-app:latest
-    build: ./flask-app
+    container_name: task-boilerplate
+    image: app:latest
+    build: ./app
     environment:
       PASSWORD: ${password}
   db:
